@@ -5,68 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test hosting</title>
-    <style>
-      .reviews-slider {
-        margin: 200px 0;
-        background-color: #f6f6f9;
-      }
-      .container {
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-      .row {
-        margin-right: -15px;
-        margin-left: -15px;
-      }
-      .col-lg-6 {
-        width: 50%;
-      }
-      .reviews-slider__title-block {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 100%;
-      }
-      .headline-2 {
-        font-family: Manrope, sans-serif;
-        font-style: normal;
-        font-size: 70px;
-        line-height: 120%;
-        font-weight: 500;
-      }
-      .reviews-slider__title {
-        position: relative;
-        color: #fff;
-        max-width: 374px;
-        z-index: 1;
-        height: 857px;
-        font-weight: bold;
-      }
-
-      .reviews-slider__background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 836px;
-        width: 44vw;
-        height: 100%;
-      }
-      .reviews-slider__background-img {
-        -o-object-position: right;
-        object-position: right;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-        display: block;
-      }
-    </style>
   </head>
   <body>
     <button
@@ -92,44 +30,294 @@
       ><i class="icon-fb"></i
     ></a>
 
-    <section class="reviews-slider">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-5 col-lg-6 col-12">
-            <div class="reviews-slider__title-block">
-              <h4 class="headline-2 reviews-slider__title">In the Press</h4>
-              <div class="reviews-slider__background">
-                <img
-                  decoding="async"
-                  src="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png"
-                  data-src="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png"
-                  data-aspect-ratio="0.9755"
-                  data-srcset="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png 836w, https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-293x300.png 293w, https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-768x787.png 768w"
-                  alt=""
-                  class="reviews-slider__background-img lazyloaded"
-                  srcset="
-                    https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png         836w,
-                    https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-293x300.png 293w,
-                    https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-768x787.png 768w
-                  "
-                /><noscript
-                  ><img
-                    decoding="async"
-                    src="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png"
-                    data-aspect-ratio="0.9755"
-                    srcset="
-                      https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png         836w,
-                      https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-293x300.png 293w,
-                      https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-768x787.png 768w
-                    "
-                    alt=""
-                    class="reviews-slider__background-img"
-                /></noscript>
+    <form
+      class="filter-sidebar filter__sidebar"
+      data-type="5"
+      siq_id="autopick_1162"
+    >
+      <div class="filter-sidebar__header">
+        <span class="filter-sidebar__title">Filter</span>
+        <button type="button" class="filter-sidebar__clear">Clear</button>
+      </div>
+      <div class="filter-sidebar__inputs">
+        <div class="checkbox-group filter-sidebar__item">
+          <span class="checkbox-group__title">TYPE</span>
+          <div class="checkbox-group__content">
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="type-0"
+                id="type-0"
+                value="day-tours"
+                data-checkbox__input="day-tours"
+                data-text="Day Tours"
+              />
+              <label for="type-0" class="checkbox__label">Day Tours</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="type-1"
+                id="type-1"
+                value="night-tours"
+                data-checkbox__input="night-tours"
+                data-text="Night Tours"
+              />
+              <label for="type-1" class="checkbox__label">Night Tours</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="type-2"
+                id="type-2"
+                value="private-tours"
+                data-checkbox__input="private-tours"
+                data-text="Private Tours"
+              />
+              <label for="type-2" class="checkbox__label">Private Tours</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-group filter-sidebar__item">
+          <span class="checkbox-group__title">CATEGORY</span>
+          <div class="checkbox-group__content">
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="cat-0"
+                id="cat-0"
+                value="bus-tours"
+                data-text="Bus Tours"
+              />
+              <label for="cat-0" class="checkbox__label">Bus Tours</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="cat-1"
+                id="cat-1"
+                value="private-tours"
+                data-text="Private Tours"
+              />
+              <label for="cat-1" class="checkbox__label">Private Tours</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="cat-2"
+                id="cat-2"
+                value="walking-tours"
+                data-text="Walking Tours"
+              />
+              <label for="cat-2" class="checkbox__label">Walking Tours</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-group filter-sidebar__item">
+          <span class="checkbox-group__title">Price</span>
+          <div class="checkbox-group__content checkbox-group__content_range">
+            <div class="range-input">
+              <div
+                class="range-input__input range-slider"
+                id="price"
+                name="price"
+              >
+                <input
+                  type="range"
+                  min="0"
+                  max="2000"
+                  step="1"
+                  value="0"
+                  disabled=""
+                /><input
+                  type="range"
+                  min="0"
+                  max="2000"
+                  step="1"
+                  value="2000"
+                  disabled=""
+                />
+                <div
+                  role="slider"
+                  class="range-slider__thumb"
+                  data-lower=""
+                  style="left: calc(0% + 10px)"
+                  aria-valuemin="0"
+                  aria-valuemax="2000"
+                  aria-valuenow="0"
+                  aria-valuetext="0"
+                  aria-disabled="false"
+                  tabindex="0"
+                ></div>
+                <div
+                  role="slider"
+                  class="range-slider__thumb"
+                  data-upper=""
+                  style="left: calc(100% + -10px)"
+                  aria-valuemin="0"
+                  aria-valuemax="2000"
+                  aria-valuenow="2000"
+                  aria-valuetext="2000"
+                  aria-disabled="false"
+                  tabindex="0"
+                ></div>
+                <div
+                  class="range-slider__range"
+                  style="left: 4.54545%; width: 90.9091%"
+                ></div>
+              </div>
+              <div class="range-input__labels">
+                <span class="range-input__label range-input__label_left"
+                  >$0</span
+                >
+                <span class="range-input__label range-input__label_right"
+                  >$2000</span
+                >
               </div>
             </div>
           </div>
         </div>
+        <div class="checkbox-group filter-sidebar__item">
+          <span class="checkbox-group__title">DURATION</span>
+          <div class="checkbox-group__content">
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="dur-0"
+                id="dur-0"
+                value="3-5h"
+                data-text="From 3 to 5 hours"
+              />
+              <label for="dur-0" class="checkbox__label"
+                >From 3 to 5 hours</label
+              >
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="dur-1"
+                id="dur-1"
+                value="6-8h"
+                data-text="From 6 to 8 hours"
+              />
+              <label for="dur-1" class="checkbox__label"
+                >From 6 to 8 hours</label
+              >
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="dur-2"
+                id="dur-2"
+                value="9-11h"
+                data-text="From 9 to 11 hours"
+              />
+              <label for="dur-2" class="checkbox__label"
+                >From 9 to 11 hours</label
+              >
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="dur-3"
+                id="dur-3"
+                value="12h_and_more"
+                data-text="From 12"
+              />
+              <label for="dur-3" class="checkbox__label">From 12</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-group filter-sidebar__item">
+          <span class="checkbox-group__title">TIME OF DAY</span>
+          <div class="checkbox-group__content">
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="t-day-0"
+                id="t-day-0"
+                value="12pm-6pm"
+                data-text="12pm — 6pm"
+              />
+              <label for="t-day-0" class="checkbox__label">12pm — 6pm</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="t-day-1"
+                id="t-day-1"
+                value="6pm-10pm"
+                data-text="6pm — 10pm"
+              />
+              <label for="t-day-1" class="checkbox__label">6pm — 10pm</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="t-day-2"
+                id="t-day-2"
+                value="9am-12pm"
+                data-text="9am — 12pm"
+              />
+              <label for="t-day-2" class="checkbox__label">9am — 12pm</label>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-group filter-sidebar__item">
+          <span class="checkbox-group__title">LANGUAGE</span>
+          <div class="checkbox-group__content">
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="lan-0"
+                id="lan-0"
+                value="english"
+                data-text="English"
+              />
+              <label for="lan-0" class="checkbox__label">English</label>
+            </div>
+            <div class="checkbox checkbox-group__item">
+              <input
+                type="checkbox"
+                class="checkbox__input"
+                name="lan-1"
+                id="lan-1"
+                value="spanish"
+                data-text="Spanish"
+              />
+              <label for="lan-1" class="checkbox__label">Spanish</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-sidebar__buttons">
+          <button
+            type="submit"
+            class="btn btn_secondary btn_200-44 filter-sidebar__button filter-sidebar__button-apply"
+          >
+            <span class="btn__text">Apply</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn_200-44 filter-sidebar__button filter-sidebar__button-cancel"
+          >
+            <span class="btn__text">Cancel</span>
+          </button>
+        </div>
       </div>
-    </section>
+    </form>
   </body>
 </html>
