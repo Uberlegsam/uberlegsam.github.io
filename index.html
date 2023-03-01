@@ -5,6 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test hosting</title>
+    <style>
+      .reviews-slider {
+        margin: 200px 0;
+        background-color: #f6f6f9;
+      }
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .row {
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .col-lg-6 {
+        width: 50%;
+      }
+      .reviews-slider__title-block {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%;
+      }
+      .reviews-slider__title {
+        position: relative;
+        color: #fff;
+        max-width: 374px;
+        z-index: 1;
+      }
+      .headline-2 {
+        font-family: Manrope, sans-serif;
+        font-style: normal;
+        font-size: 70px;
+        line-height: 120%;
+        font-weight: 500;
+      }
+      .reviews-slider__background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 836px;
+        width: 44vw;
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
     <button
@@ -29,5 +77,45 @@
     <a href="https://www.example.com" target="_blank" title="Facebook"
       ><i class="icon-fb"></i
     ></a>
+
+    <section class="reviews-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 col-12">
+            <div class="reviews-slider__title-block">
+              <h4 class="headline-2 reviews-slider__title">In the Press</h4>
+              <div class="reviews-slider__background">
+                <img
+                  decoding="async"
+                  src="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png"
+                  data-src="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png"
+                  data-aspect-ratio="0.9755"
+                  data-srcset="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png 836w, https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-293x300.png 293w, https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-768x787.png 768w"
+                  alt=""
+                  class="reviews-slider__background-img lazyloaded"
+                  srcset="
+                    https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png         836w,
+                    https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-293x300.png 293w,
+                    https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-768x787.png 768w
+                  "
+                /><noscript
+                  ><img
+                    decoding="async"
+                    src="https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png"
+                    data-aspect-ratio="0.9755"
+                    srcset="
+                      https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider.png         836w,
+                      https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-293x300.png 293w,
+                      https://usaguidedtours.com/wp-content/uploads/2022/06/bg-review-slider-768x787.png 768w
+                    "
+                    alt=""
+                    class="reviews-slider__background-img"
+                /></noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
